@@ -1,6 +1,8 @@
 # swift-vapor-demo
 just putting some swift on the heroku
 
+Hello World here: https://docs.vapor.codes/3.0/getting-started/hello-world/
+
 Instructions here https://elements.heroku.com/buildpacks/vapor-community/heroku-buildpack
 
 The `vapor heroku init` is broken and fails with GeneralError(message: "Unable to locate vapor dependency"), see: https://github.com/vapor/vapor/issues/1958
