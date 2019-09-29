@@ -11,10 +11,12 @@ The `vapor heroku init` is broken and fails with GeneralError(message: "Unable t
 
 I think these steps will make it work:
 
-`echo 'web: Run serve --env production --hostname 0.0.0.0 --port $PORT' > Procfile`
-`echo '5.0.1' > .swift-version`
-`heroku create --buildpack vapor/vapor`
-`git push heroku master`
+```
+echo 'web: Run serve --env production --hostname 0.0.0.0 --port $PORT' > Procfile
+echo '5.0.1' > .swift-version
+heroku create --buildpack vapor/vapor
+git push heroku master
+```
 
 Nice feature overview: https://www.hackingwithswift.com/articles/73/server-side-swift-kitura-vs-vapor
 
